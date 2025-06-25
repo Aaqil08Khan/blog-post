@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border: 1px solid black;
+  background-color: #2e003e;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container > div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  align-content: center;
+  line-height: 22px;
+  font-size: 12px;
+}
+
+.container .logo img {
+  margin: auto;
+  display: flex;
+  align-content: center;
+  width: 82px;
+  height: 23px;
+}
+.container .logo a{
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  font-size: 9px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul a:hover {
+  color: hotpink;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.buttons .btn-log {
+  width: 27px;
+  height: 15px;
+  font-size: 8px;
+  cursor: pointer;
+}
+.bn-log:hover {
+  font-size: 19px;
+  color: black;
+}
+.buttons .btn-sign {
+  width: 35px;
+  height: 15px;
+  font-size: 8px;
+  cursor: pointer;
+}
+.buttons a{
+  color: black;
+}
+
+.buttons a:hover{
+  color: rgba(236, 215, 26, 0.958);
+  font-size: 9px;
+}
+
+.main {
+  background-color: #f8ede3;
+  /* height: 100%; */
+  /* margin: auto; */
+  padding: 8px;
+  position: relative;
+}
+.intro {
+  align-items: center;
+  display: inline;
+}
+
+.main h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.main p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 2px;
+}
+.btn {
+  font-family: "Roboto", Sans-serif;
+  font-size: 9px;
+  line-height: 17px;
+  border: 2px solid black;
+  width: 13%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.btn a {
+  color: black;
+}
+
+.btn a:hover{
+  font-size: 10px;
+  transition: 0.5s ease;
+}
+/* 
+a.btn:hover,
+a.btn:visited {
+  color: black;
+  font-size: 20px;
+} */
+/* .intro a:hover{
+  background-color: red;
+  color: black;
+} */
+
+.box1 {
+  background-color: #e7d9f1;
+  height: 140vh;
+  width: 95vw;
+  padding: 2px;
+  margin: 5px;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  border-radius: 7px;
+}
+
+.card {
+  /* border: 1px solid black; */
+  padding: 1px;
+  display: grid;
+  width: 22vw;
+  height: 39vh;
+  display: block;
+  /* align-content: center; */
+  cursor: pointer;
+  background-color: #9ad2b9;
+  /* font-size: 9px; */
+  border-radius: 7px;
+  position: relative;
+}
+
+.card:hover {
+  background-color: #8fb2a2;
+  opacity: 0.5;
+  font-size: 10px;
+}
+
+.card img {
+  width: 21vw;
+  height: 32vh;
+  align-self: center;
+  margin: auto;
+  padding: 2px;
+  border-radius: 7px;
+  display: block;
+}
+.card p {
+  text-align: center;
+  font-size: 9px;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  background-color: transparent;
+  color: white;
+  overflow: hidden;
+  width: 100%;
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: white;
+  font-size: 9px;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.card:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 30vh;
+  left: 0;
+  bottom: 0;
+}
